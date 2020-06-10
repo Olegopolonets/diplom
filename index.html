@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,700|Pacifico&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet" />
+    <link rel="shortcut icon" href="assets/images/icon_ds.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <title>DesCo studio</title>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__logo" data-scroll="#intro">
+                    <a class="header__logo" href="#">DesCo studio</a>
+                </div>
+
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="#" data-scroll="#about">Про студію</a>
+                    <a class="nav__link" href="#" data-scroll="#services">Послуги</a>
+                    <a class="nav__link" href="#" data-scroll="#works">наші проекти</a>
+                    <a class="nav__link" href="#" data-scroll="#blog">Блог</a>
+                    <a class="nav__link" href="#" data-scroll="#footer">Контакти</a>
+                </nav>
+
+                <button class="nav-toggle" id="nav_toggle" type="button">
+          <span class="nav-toggle__item">Menu</span>
+        </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page">
+        <!-- Intro -->
+        <div class="intro" id="intro">
+            <div class="container">
+                <div class="intro__inner">
+                    <h2 class="intro__suptitle">Креативні люди</h2>
+                    <h1 class="intro__title">Вітають вас в DesCo studio</h1>
+
+                    <a class="btn" id="myBtn" href="contact_us.html">ЗВ'ЯЗАТИСЯ З НАМИ</a>
+                </div>
+
+                <div id="myModal" class="modal">
+                    <div class="modal__content">
+                        <span class="close">&times;</span>
+                        <p>Модальное окна</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.intro -->
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section__header">
+                    <h3 class="section__suptitle">Що таке DesCo studio?</h3>
+                    <h2 class="section__title">Маленька історія про нас</h2>
+                    <div class="section__text">
+                        <p>
+                            <b>DesCo studio</b> - маленька компнія яка займається розробкою мобільних додатків, веб-сайтів, креативним дизайном. Наша майстерність та інноваційний підхід втілюють в життя проекти будь-якої складності. Наші продукти — результат
+                            досвіду та глибоких досліджень, чіткого розуміння поставлених завдань і занурення в бізнес клієнта. <br />
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <div class="card__img">
+                                <img src="assets/images/about/1-1.jpg" alt="" />
+                            </div>
+                            <div class="card__text">Сучасний дизайн</div>
+                        </div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <div class="card__img">
+                                <img src="assets/images/about/2-1.jpg" alt="" />
+                            </div>
+                            <div class="card__text">Чудова команда</div>
+                        </div>
+                    </div>
+
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <div class="card__img">
+                                <img src="assets/images/about/3-1.jpg" alt="" />
+                            </div>
+                            <div class="card__text">ВИСОКА ЯКІСТЬ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- Statistics -->
+        <div class="statistics">
+            <div class="container">
+                <div class="stat">
+                    <div class="stat__item">
+                        <div class="stat__count">23</div>
+                        <div class="stat__text">ПРОЕКТИ ВЕБ-ДИЗАЙНУ</div>
+                    </div>
+                    <div class="stat__item">
+                        <div class="stat__count">73</div>
+                        <div class="stat__text">Щасливих клієнтів</div>
+                    </div>
+                    <div class="stat__item">
+                        <div class="stat__count">11</div>
+                        <div class="stat__text">нагород</div>
+                    </div>
+                    <div class="stat__item">
+                        <div class="stat__count">106</div>
+                        <div class="stat__text">чашок кави</div>
+                    </div>
+                    <div class="stat__item">
+                        <div class="stat__count">14</div>
+                        <div class="stat__text">учасників</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section__header">
+                    <h3 class="section__suptitle">Що ми робимо?</h3>
+                    <h2 class="section__title">Дивовижні послуги</h2>
+                </div>
+
+                <div class="services">
+                    <div class="services__item services__item--border">
+                        <img class="services__icon" src="assets/images/services/desing.png" alt="" />
+
+                        <div class="services__title">Дизайн</div>
+                        <div class="services__text">
+                            Зображення є головним засобом передачі інформації в інтернеті. Ми створюємо дизайн для Ваших потреб, опираючись на Ваші побажання, тенденції сьогодення та зручність у використанні.
+                        </div>
+                    </div>
+                    <div class="services__item services__item--border">
+                        <img class="services__icon" src="assets/images/services/webdesign.png" alt="" />
+
+                        <div class="services__title">Веб-розробка</div>
+                        <div class="services__text">
+                            Від простого допоміжного скрипту до багатофункціонального порталу. Ми знаходимо правильне технічне рішення для кожного сайту та використовуємо перевірені технології для надання стабільності нашим продуктам.
+                        </div>
+                    </div>
+                    <div class="services__item services__item--border">
+                        <img class="services__icon" src="assets/images/services/mobile.png" alt="" />
+
+                        <div class="services__title">Мобільна розробка</div>
+                        <div class="services__text">
+                            Все більше людей користуються інтернетом на мобільному пристрої. Вдале застосування потенціалу мобільних додатків – наша спеціалізація. Ми створюємо додатки, якими зручно і приємно користуватися.
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <img class="services__icon" src="assets/images/services/seo1.png" alt="" />
+
+                        <div class="services__title">seo</div>
+                        <div class="services__text">
+                            Завдання пошукової оптимізації сайту є виведення сайту на перші позиції на сторінках видачі пошукових результатів. При цьому пріоритетним є виведення сайту в ТОП тільки в момент релевантних, тобто відповідних йому за тематикою запитів користувачів.
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <img class="services__icon" src="assets/images/services/consal.png" alt="" />
+
+                        <div class="services__title">Консалтинг</div>
+                        <div class="services__text">
+                            Ми рухаємо ваш бізнес в цифровому просторі. Ми пропонуємо аналіз поточних бізнес-процесів та створення і налаштування прикладного програмного забезпечення для автоматизації стосунків з клієнтами.
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <img class="services__icon" src="assets/images/services/digital.png" alt="" />
+
+                        <div class="services__title">digital</div>
+                        <div class="services__text">
+                            Головними завданнями цифрового маркетингу є просування бренду і збільшення збуту за допомогою різних методик. Цифровий маркетинг включає в себе великий вибір маркетингових тактик з просування товарів, послуг і брендів.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- Devices -->
+        <section class="section section--devices">
+            <div class="container">
+                <div class="section__header">
+                    <h3 class="section__suptitle">Для всіх пристроїв</h3>
+                    <h2 class="section__title">Унікальний дизайн</h2>
+                </div>
+
+                <div class="devices">
+                    <img class="devices__item" src="assets/images/ipad1.png" alt="" />
+                    <img class="devices__item devices__item--iphone" src="assets/images/iphone1.png" alt="" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Wedo -->
+        <section class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h3 class="section__suptitle">Сервіси</h3>
+                    <h2 class="section__title">Чим ми займаємося?</h2>
+                    <div class="section__text">
+                        <p>
+                            DesCo studio займається не тільки розробкою сайтів, а також пропонує повний комплекс послуг для створення ефективного веб-ресурсу. У компанії працюють фахівці, які знають про створення сайту все. Досвід роботи та професіоналізм дозволяють реалізовувати
+                            проекти будь-якої складності.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="wedo">
+                    <div class="wedo__item">
+                        <img class="wedo__img" src="assets/images/wedo.jpg" alt="" />
+                    </div>
+
+                    <div class="wedo__item">
+                        <div class="accordion">
+                            <div class="accordion__item" data-collapse="#wedo_1">
+                                <div class="accordion__header">
+                                    <img class="accordion__icon" src="assets/images/services/desing.png" alt="" />
+                                    <div class="accordion__title">Дизайн</div>
+                                </div>
+                                <div class="accordion__content" id="wedo_1">
+                                    <p>
+                                        Дизайн логотипу є основою фірмового стилю, що містить в собі максимум смислового та візуального навантаження. Логотип здатний значно вплинути на лояльність аудиторії до компанії. Маючи своє лого, ви зможете провести ефективну рекламну кампанію в ЗМІ,
+                                        розробити поліграфічні матеріали та сувеніри, створити POS-матеріали. Якісний та професійно виконаний логотип підвищить популярність вашої фірми та продукції.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion__item active" data-collapse="#wedo_2">
+                                <div class="accordion__header">
+                                    <img class="accordion__icon" src="assets/images/services/webdesign.png" alt="" />
+                                    <div class="accordion__title">Веб-розробка</div>
+                                </div>
+                                <div class="accordion__content" id="wedo_2">
+                                    <p>
+                                        Професійне створення сайтів web-студією починається із постановки задачі. Перед тим, як ви вирішите, що вам необхідно розробити сайт, варто визначитися з цілями та функціями, які він має виконувати. Чітко поставлені цілі та задачі, дозволяють зробити
+                                        ресурс ефективним інструментом в довгостроковій перспективі. Всі створені нами сайти відрізняються індивідуальністю стилю, нетривіальною концепцією та зручністю користування.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion__item" data-collapse="#wedo_3">
+                                <div class="accordion__header">
+                                    <img class="accordion__icon" src="assets/images/services/mobile.png" alt="" />
+                                    <div class="accordion__title">мобільна розробка</div>
+                                </div>
+                                <div class="accordion__content" id="wedo_3">
+                                    <p>
+                                        Все більше людей користуються інтернетом на мобільному пристрої. Вдале застосування потенціалу мобільних додатків – наша спеціалізація. Ми створюємо додатки, якими зручно і приємно користуватися.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.accordion -->
+                    </div>
+                    <!-- /.wedo__item -->
+                </div>
+                <!-- /.wedo -->
+            </div>
+        </section>
+
+        <!-- Reviews 1 -->
+        <div class="section section--gray">
+            <div class="container">
+                <div class="reviews">
+                    <div data-slider>
+                        <div>
+                            <div class="reviews__item">
+                                <img class="reviews__photo" src="assets/images/reviews/avatar1.png" alt="" />
+                                <div class="reviews__text">
+                                    “DesCo studio чимало робить для задоволенності людей та їхнього розвитку, компанія завжди підтримає в складні часи. Для DesCo studio «люди — найцінніше!» не просто слова.”
+                                </div>
+                                <div class="reviews__author">Кріс Пратт</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="reviews__item">
+                                <img class="reviews__photo" src="assets/images/reviews/avatar2.png" alt="" />
+                                <div class="reviews__text">
+                                    “Пропрацювала в компанії 2,5 роки. Хочу відмітити, що фірма дуже комфортна як з точки зору організації процесів, так і в побутовому розумінні.”
+                                </div>
+                                <div class="reviews__author">Скарлетт Йоханссон</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="reviews__item">
+                                <img class="reviews__photo" src="assets/images/reviews/avatar3.png" alt="" />
+                                <div class="reviews__text">
+                                    “Дуже красивий та затишний інтер’єр, приємна атмосфера, гнучкий графік і неймовірно чуйне керівництво, яке кожного разу ішло на зустріч і робило все максимальноможливе для моєї якісної роботи.”
+                                </div>
+                                <div class="reviews__author">Том Голланд</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team -->
+        <section class="section">
+            <div class="container">
+                <div class="section__header">
+                    <h3 class="section__suptitle">Хто ми є?</h3>
+                    <h2 class="section__title">Знайомтесь з нашою командою</h2>
+                    <div class="section__text">
+                        <p>
+                            МИ — КОМАНДА вузькопрофільних спеціалістів високого класу. Ми доповнюємо один одного у роботі, саме це забезпечує найкращий результат. У нас сильні архітектори інформаційних систем, уважні та прискіпливі бізнес-аналітики, досвідчені програмісти та експерти
+                            в галузі мобільних додатків, креативний дизайнер інтерфейсів та виважений ІТ-маркетолог.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <div class="card__img">
+                                <img src="assets/images/team/1.jpg" alt="" />
+                            </div>
+                            <div class="card__text">
+                                <div class="social">
+                                    <a class="social__item" href="https://www.facebook.com/" target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a class="social__item" href="https://twitter.com/?lang=uk" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a class="social__item" href="https://www.pinterest.com/" target="_blank">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                    <a class="social__item" href="https://www.instagram.com/?hl=ru" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__info">
+                            <div class="card__name">Чумак Андрій</div>
+                            <div class="card__prof">Графічний дизайнер</div>
+                        </div>
+                    </div>
+                    <!-- /.card__item -->
+
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <div class="card__img">
+                                <img src="assets/images/team/2.jpg" alt="" />
+                            </div>
+                            <div class="card__text">
+                                <div class="social">
+                                    <a class="social__item" href="https://www.facebook.com/" target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a class="social__item" href="https://twitter.com/?lang=uk" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a class="social__item" href="https://www.pinterest.com/" target="_blank">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                    <a class="social__item" href="https://www.instagram.com/?hl=ru" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__info">
+                            <div class="card__name">Ярмоленко Христина</div>
+                            <div class="card__prof">Mobile-разработчик</div>
+                        </div>
+                    </div>
+                    <!-- /.card__item -->
+
+                    <div class="card__item">
+                        <div class="card__inner">
+                            <div class="card__img">
+                                <img src="assets/images/team/3.jpg" alt="" />
+                            </div>
+                            <div class="card__text">
+                                <div class="social">
+                                    <a class="social__item" href="https://www.facebook.com/" target="_blank">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a class="social__item" href="https://twitter.com/?lang=uk" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a class="social__item" href="https://www.pinterest.com/" target="_blank">
+                                        <i class="fab fa-pinterest-p"></i>
+                                    </a>
+                                    <a class="social__item" href="https://www.instagram.com/?hl=ru" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__info">
+                            <div class="card__name">Нестенко Назар</div>
+                            <div class="card__prof">Web-Розробник</div>
+                        </div>
+                    </div>
+                    <!-- /.card__item -->
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- Logos -->
+        <div class="section section--gray">
+            <div class="container">
+                <div class="logos">
+                    <div class="logos__item">
+                        <img class="logos__img" src="assets/images/logos/1.png" alt="" />
+                    </div>
+                    <div class="logos__item">
+                        <img class="logos__img" src="assets/images/logos/2.png" alt="" />
+                    </div>
+                    <div class="logos__item">
+                        <img class="logos__img" src="assets/images/logos/3.png" alt="" />
+                    </div>
+                    <div class="logos__item">
+                        <img class="logos__img" src="assets/images/logos/4.png" alt="" />
+                    </div>
+                    <div class="logos__item">
+                        <img class="logos__img" src="assets/images/logos/5.png" alt="" />
+                    </div>
+                    <div class="logos__item">
+                        <img class="logos__img" src="assets/images/logos/6.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Works -->
+        <section class="section" id="works">
+            <div class="container">
+                <div class="section__header">
+                    <h3 class="section__suptitle">Яку роботу ми виконуємо?</h3>
+                    <h2 class="section__title">Деякі наші проекти</h2>
+                    <div class="section__text">
+                        <p>
+                            Сучасний бізнес не може повноцінно розвиватися без інтернет-технологій. Сайт фірми не просто відображає її статус і сприяє формуванню іміджу, в першу чергу, - це робочий інструмент, який виконує суто практичну функцію. Створення ефективно працюючого сайту
+                            - завдання непросте і комплексне.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="works">
+                <div class="works__col">
+                    <div class="works__item">
+                        <img class="works__image" src="assets/images/works/1.jpg" alt="" />
+                        <div class="works__info">
+                            <div class="works__title">GPS’KA</div>
+                            <div class="works__text">
+                                <a href="Gps_portfolio.html">Детальніше</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="works__item">
+                        <img class="works__image" src="assets/images/works/2.jpg" alt="" />
+                        <div class="works__info">
+                            <div class="works__title">X-SAT PROJECT</div>
+                            <div class="works__text">
+                                <a href="Xsat_portfolio.html">Детальніше</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="works__col">
+                    <div class="works__item">
+                        <img class="works__image" src="assets/images/works/3.jpg" alt="" />
+                        <div class="works__info">
+                            <div class="works__title">САЙТ КОНФЕРЕНЦІЙ</div>
+                            <div class="works__text">
+                                <a href="Conference_site_portfolio.html">Детальніше</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="works__item">
+                        <img class="works__image" src="assets/images/works/4.jpg" alt="" />
+                        <div class="works__info">
+                            <div class="works__title">BITDEFENDER</div>
+                            <div class="works__text">
+                                <a href="BITDEFENDER_portfolio.html">Детальніше</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="works__col">
+                    <div class="works__item">
+                        <img class="works__image" src="assets/images/works/5.jpg" alt="" />
+                        <div class="works__info">
+                            <div class="works__title">NAVIZONE APP</div>
+                            <div class="works__text">
+                                <a href="navizone_app_portfolio.html">Детальніше</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="works__col">
+                    <div class="works__item">
+                        <img class="works__image" src="assets/images/works/6.jpg" alt="" />
+                        <div class="works__info">
+                            <div class="works__title">ELEVATOR</div>
+                            <div class="works__text">
+                                <a href="ELEVATOR_portfolio.html">Детальніше</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="works__item">
+                        <img class="works__image" src="assets/images/works/7.jpg" alt="" />
+                        <div class="works__info">
+                            <div class="works__title">ОГК-ЕКОЛОГІЯ</div>
+                            <div class="works__text">
+                                <a href="eco_portfolio.html">Детальніше</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.works -->
+        </section>
+
+        <!-- Reviews 2 -->
+        <div class="section">
+            <div class="container">
+                <div class="reviews">
+                    <div data-slider>
+                        <div>
+                            <div class="reviews__item">
+                                <img class="reviews__photo" src="assets/images/reviews/avatar4.png" alt="" />
+                                <div class="reviews__text">
+                                    “DesCo studio — компания с комфортными условиями труда и с интересными проектами. Дружественный, молодой и профессиональный коллектив, качественная техника и возможность удаленной работы.”
+                                </div>
+                                <div class="reviews__author">Брі Ларсон</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="reviews__item">
+                                <img class="reviews__photo" src="assets/images/reviews/avatar5.png" alt="" />
+                                <div class="reviews__text">
+                                    “Співпрацюю 8-й місяць. Політ нормальний, враження в основному позитивні.Відсутність хронічних авралів та помірно індивідуальний підхід до співпраці”
+                                </div>
+                                <div class="reviews__author">Семюел Лірой Джексон</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="reviews__item">
+                                <img class="reviews__photo" src="assets/images/reviews/avatar6.png" alt="" />
+                                <div class="reviews__text">
+                                    “Хороша компанія. Я пропрацював тут 8+ місяців, звільнився бо не склалось з проектом. Щодо компанії — позитив: компенсація, лояльність, комфортне робоче місце, розташування офісу.”
+                                </div>
+                                <div class="reviews__author">Том Гіддлстон</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Clients -->
+        <section class="section section--clients">
+            <div class="container">
+                <div class="section__header">
+                    <h3 class="section__suptitle">Щасливі клієнти</h3>
+                    <h2 class="section__title">Що говорять люди?</h2>
+                </div>
+
+                <div class="clients">
+                    <div class="clients__item">
+                        <img class="clients__photo" src="assets/images/clients/1.png" alt="" />
+                        <div class="clients__content">
+                            <div class="clients__name">Вишезор Валентин</div>
+                            <div class="clients__prof">Менеджер</div>
+                            <div class="clients__text">
+                                Дякую компанії "DesCo studio" і особисто Олександру за хорошу роботу. Все було на вищому рівні,без затримок і непорозумінь. Раджу усім цю команду!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clients__item">
+                        <img class="clients__photo" src="assets/images/clients/2.png" alt="" />
+                        <div class="clients__content">
+                            <div class="clients__name">Тетерів Павло</div>
+                            <div class="clients__prof">Юрист</div>
+                            <div class="clients__text">
+                                Замовляв сайт та контекстну рекламу для юридичних послуг. Зробили все якісно та швидко. Рекомендую.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clients__item">
+                        <img class="clients__photo" src="assets/images/clients/3.png" alt="" />
+                        <div class="clients__content">
+                            <div class="clients__name">Берц Олександр</div>
+                            <div class="clients__prof">Дирекстор Parade Allure</div>
+                            <div class="clients__text">
+                                Я дуже вдячний компанії за дуже якісний сайт, мені насправді дуже приємно здивували. Рекомендую всім, особисто пана Артема.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="clients__item">
+                        <img class="clients__photo" src="assets/images/clients/4.png" alt="" />
+                        <div class="clients__content">
+                            <div class="clients__name">Парасюк Володимир</div>
+                            <div class="clients__prof">Редактор газети "Колос"</div>
+                            <div class="clients__text">
+                                Замовляв сайт через цю компанію, буквально за 5 днів сайт уже стояв на хостингу, ціни - дуже доступні , тому в подальшому буду звертатися тільки в цю компанію.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.clients -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- Blog -->
+        <section class="section" id="blog">
+            <div class="container">
+                <div class="section__header">
+                    <h3 class="section__suptitle">Наш блог</h3>
+                    <h2 class="section__title">Останні історії</h2>
+                </div>
+
+                <div class="blog">
+                    <div class="blog__item">
+                        <div class="blog__header">
+                            <a href="#">
+                                <img class="blog__photo" src="assets/images/blog/1.jpg" alt="" />
+                            </a>
+                            <div class="blog__date">
+                                <div class="blog__date-day">15</div>
+                                Бер
+                            </div>
+                        </div>
+                        <div class="blog__content">
+                            <div class="blog__title">
+                                <a href="#">5 цілей, яких допоможе досягти веб-сайт</a>
+                            </div>
+                            <div class="blog__text">
+                                Головна і основна мета в бізнесі і для сайту, який допомагає вам його створювати – це прибуток. Але є і не менш важливі цілі, досягнення яких позитивно позначиться на розвитку…
+                            </div>
+                        </div>
+                        <div class="blog__footer">
+                            <div class="blog-stat">
+                                <span class="blog-stat__item">
+                  <i class="far fa-eye"></i> 542
+                </span>
+                                <span class="blog-stat__item">
+                  <i class="far fa-comment-dots"></i> 17
+                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog__item">
+                        <div class="blog__header">
+                            <a href="#">
+                                <img class="blog__photo" src="assets/images/blog/2.jpg" alt="" />
+                            </a>
+                            <div class="blog__date">
+                                <div class="blog__date-day">11</div>
+                                Бер
+                            </div>
+                        </div>
+                        <div class="blog__content">
+                            <div class="blog__title">
+                                <a href="#">Поведінкові чинники Google і SEO</a>
+                            </div>
+                            <div class="blog__text">
+                                Поведінкові фактори вже не перший рік посідають топові позиції серед SEO-трендів. Їх вплив на ранжування сайту швидше має тенденцію зростання, ніж спаду. У цій статті ви дізнаєтеся про поведінкові чинники…
+                            </div>
+                        </div>
+                        <div class="blog__footer">
+                            <div class="blog-stat">
+                                <span class="blog-stat__item">
+                  <i class="far fa-eye"></i> 501
+                </span>
+                                <span class="blog-stat__item">
+                  <i class="far fa-comment-dots"></i> 29
+                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog__item">
+                        <div class="blog__header">
+                            <a href="#">
+                                <img class="blog__photo" src="assets/images/blog/3.jpg" alt="" />
+                            </a>
+                            <div class="blog__date">
+                                <div class="blog__date-day">27</div>
+                                Лют
+                            </div>
+                        </div>
+                        <div class="blog__content">
+                            <div class="blog__title">
+                                <a href="#">Пошукова оптимізація (SEO) сайта</a>
+                            </div>
+                            <div class="blog__text">
+                                SEO просування – це процес розкрутки сайту в пошукових системах. У довгостроковій перспективі використання цього методу забезпечує трафік. Пошукова система, будь то Google або Яндекс, має…
+                            </div>
+                        </div>
+                        <div class="blog__footer">
+                            <div class="blog-stat">
+                                <span class="blog-stat__item">
+                  <i class="far fa-eye"></i> 482
+                </span>
+                                <span class="blog-stat__item">
+                  <i class="far fa-comment-dots"></i> 30
+                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.blog -->
+            </div>
+            <!-- /.container -->
+        </section>
+
+        <!-- Map -->
+        <section class="section section--map">
+            <div class="container">
+                <div class="map">
+                    <h2 class="map__title">
+                        <div><i class="fas fa-map-marker-alt"></i></div>
+                        <a href="https://goo.gl/maps/GtgW2jgQdLKgRF3t9" target="_blank">Відкрити карту</a>
+                    </h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__col footer__col--first">
+                        <div class="footer__logo">DesCo studio</div>
+                        <div class="footer__text">
+                            Ми розробляємо та структуруємо цифрову стратегію розвитку. Ми підходимо індивідуально у кожному окремому випадку. Саме тому продукти DesCo studio відповідають потребам клієнтів. Наш досвід зробить ваш проект успішним! Давайте розкриємо можливості Вашого
+                            бізнесу!
+                        </div>
+
+                        <div class="footer__social">
+                            <div class="footer__social-header">
+                                <b>15k</b> послідовників
+                            </div>
+                            <div class="footer__social-content">
+                                Слідкуй за нами:
+                                <a href="https://uk-ua.facebook.com/" target="_blank">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                                <a href="https://twitter.com/explore" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="https://www.instagram.com/?hl=uk" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <form class="subscribe" action="/" method="post">
+                            <input class="subscribe__input" type="email" name="name" placeholder="Ваш Email..." />
+                            <button class="subscribe__btn" type="submit">
+                Підписатися
+              </button>
+                        </form>
+                    </div>
+                    <!-- /.footer__col -->
+
+                    <div class="footer__col footer__col--second">
+                        <div class="footer__title">Блог</div>
+
+                        <div class="blogs">
+                            <div class="blogs__item">
+                                <img class="blogs__img" src="assets/images/blog/1.jpg" alt="" />
+                                <div class="blogs__content">
+                                    <a class="blogs__title" href="#">5 цілей, яких допоможе досягти веб-сайт</a>
+                                    <div class="blogs__date">Бер 15, 2020</div>
+                                </div>
+                            </div>
+
+                            <div class="blogs__item">
+                                <img class="blogs__img" src="assets/images/blog/2.jpg" alt="" />
+                                <div class="blogs__content">
+                                    <a class="blogs__title" href="#">Поведінкові чинники Google і SEO</a>
+                                    <div class="blogs__date">Бер 11, 2020</div>
+                                </div>
+                            </div>
+
+                            <div class="blogs__item">
+                                <img class="blogs__img" src="assets/images/blog/3.jpg" alt="" />
+                                <div class="blogs__content">
+                                    <a class="blogs__title" href="#">Пошукова оптимізація (SEO) сайта</a>
+                                    <div class="blogs__date">Лют 27, 2020</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.blogs -->
+                    </div>
+
+                    <div class="footer__col footer__col--third">
+                        <div class="footer__title">Інстаграм</div>
+
+                        <div class="instagram">
+                            <a class="instagram__item" href="https://www.instagram.com/?hl=ru" target="_blank">
+                                <img src="assets/images/instagram/1.jpg" alt="" />
+                            </a>
+                            <a class="instagram__item" href="https://www.instagram.com/?hl=ru" target="_blank">
+                                <img src="assets/images/instagram/2.jpg" alt="" />
+                            </a>
+                            <a class="instagram__item" href="https://www.instagram.com/?hl=ru" target="_blank">
+                                <img src="assets/images/instagram/3.jpg" alt="" />
+                            </a>
+                            <a class="instagram__item" href="https://www.instagram.com/?hl=ru" target="_blank">
+                                <img src="assets/images/instagram/4.jpg" alt="" />
+                            </a>
+                            <a class="instagram__item" href="https://www.instagram.com/?hl=ru" target="_blank">
+                                <img src="assets/images/instagram/5.jpg" alt="" />
+                            </a>
+                            <a class="instagram__item" href="https://www.instagram.com/?hl=ru" target="_blank">
+                                <img src="assets/images/instagram/6.jpg" alt="" />
+                            </a>
+                            <a class="instagram__item" href="https://www.instagram.com/?hl=ru" target="_blank">
+                                <img src="assets/images/instagram/7.jpg" alt="" />
+                            </a>
+                            <a class="instagram__item" href="https://www.instagram.com/?hl=ru" target="_blank">
+                                <img src="assets/images/instagram/8.jpg" alt="" />
+                            </a>
+                            <a class="instagram__item" href="https://www.instagram.com/?hl=ru" target="_blank">
+                                <img src="assets/images/instagram/9.jpg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.footer__inner -->
+
+                <div class="copyright">
+                    © 2020 DesCo studio, graduate work <span>Opolonets</span>
+                </div>
+            </div>
+            <!-- /.container -->
+        </footer>
+    </div>
+    <!-- /.page -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

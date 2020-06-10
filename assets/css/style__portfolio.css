@@ -1,0 +1,406 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #fff;
+    background: url("../images/devices-bg.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1230px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+
+/* header */
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #222;
+    text-decoration: none;
+}
+
+
+/* Nav */
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    position: relative;
+    color: #222;
+    text-decoration: none;
+    transition: color 0.1s linear;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(63, 57, 57);
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity 0.1s linear;
+}
+
+.nav__link:hover {
+    color: rgb(63, 57, 57);
+}
+
+.nav__link:hover:after,
+.nav__link.active:after {
+    opacity: 1;
+}
+
+.nav__link.active {
+    color: rgb(63, 57, 57);
+}
+
+
+/* Nav toggle */
+
+.nav-toggle {
+    width: 30px;
+    padding: 10px 0;
+    display: none;
+    font-size: 0;
+    color: transparent;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    z-index: 1;
+}
+
+.nav-toggle:focus {
+    outline: 0;
+}
+
+.nav-toggle__item {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    transition: background 0.2s linear;
+}
+
+.nav-toggle.active .nav-toggle__item {
+    background: none;
+}
+
+.nav-toggle__item:before,
+.nav-toggle__item:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    transition: transform 0.2s linear;
+}
+
+.nav-toggle__item:before {
+    top: -8px;
+}
+
+.nav-toggle__item:after {
+    bottom: -8px;
+}
+
+.nav-toggle.active .nav-toggle__item:before {
+    transform-origin: left top;
+    transform: rotate(45deg) translate3d(0px, -2px, 0);
+}
+
+.nav-toggle.active .nav-toggle__item:after {
+    transform-origin: left bottom;
+    transform: rotate(-45deg) translate3d(0px, 3px, 0);
+}
+
+
+/* */
+
+.general__title {
+    color: #222;
+    text-transform: uppercase;
+    font-family: "Roboto Light";
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+.btn__one {
+    display: block;
+    outline: none;
+    text-align: center;
+    max-width: 280px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid #222;
+    text-transform: uppercase;
+    color: #222;
+    margin-top: 50px;
+    padding: 12px 10px;
+    text-decoration: none;
+    transition: 0.3s color, 0.3s background-color;
+}
+
+.btn__one:hover {
+    color: #fff;
+    background-color: #222;
+}
+
+
+/* Секція */
+
+.single {
+    margin-top: 55px;
+    padding: 0 10px;
+}
+
+.single__wrap {
+    max-width: 1200px;
+    padding: 55px;
+    margin: 20px auto;
+    -webkit-box-shadow: 0 2px 46px #0068ff;
+    box-shadow: 0 2px 46px #0068ff;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
+    background-color: #222;
+}
+
+.single__container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.single__title {
+    color: #a94bcb;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.single__text {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 50px;
+    font-size: 15px;
+    color: #9b9b9b;
+    line-height: 1.3;
+}
+
+.single__img {
+    width: calc(100% - 350px);
+}
+
+.picture {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+
+/* form-contact_us */
+
+
+/* ERRORS */
+
+.page-form_errors {
+    padding-bottom: 30px;
+    font-size: 16px;
+    font-family: "Roboto Medium";
+    color: #d7333a;
+}
+
+.page-form_errors p {
+    display: none;
+}
+
+
+/* Form */
+
+.page-form_row {
+    position: relative;
+    margin-bottom: 35px;
+    max-width: 660px;
+}
+
+.form-placeholder {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #666;
+    font-size: 16px;
+    cursor: text;
+    transition: 0.5s top, 0.5s font-size, 0.5s height;
+    z-index: 0;
+}
+
+.form-input {
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #999;
+    color: #666;
+    font-size: 16px;
+    padding: 5px 0;
+    transition: 0.3s border;
+}
+
+.form-input:hover {
+    border-bottom: 1px solid #fff;
+}
+
+
+/* text */
+
+.contact-page_text {
+    margin: 50px 0;
+    color: #9b9b9b;
+    font-size: 15px;
+}
+
+.contact-page_text p {
+    margin-bottom: 15px;
+}
+
+
+/* button "Надішліть" запит */
+
+.page-form_row {
+    position: relative;
+    margin-bottom: 35px;
+    max-width: 660px;
+}
+
+.btn {
+    display: block;
+    border: 0;
+    outline: none;
+    transition: 0.3s color, 0.3s background-color, 0.3s border;
+}
+
+.btn:hover {
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #333;
+    font-weight: bold;
+}
+
+.page-form_btn {
+    width: 100%;
+    max-width: 300px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px 10px;
+    margin-top: 50px;
+}
+
+
+/* Адаптив */
+
+@media (max-width: 990px) {
+    .single__text {
+        max-width: 100%;
+        font-size: 20px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+    .single__img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 770px) {
+    .nav__link {
+        margin: 0 8px;
+    }
+    .single__title {
+        font-size: 40px;
+    }
+    .header__inner {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    .header__logo {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .header__inner {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .header__logo {
+        margin-bottom: 20px;
+    }
+    .general__title {
+        font-size: 40px;
+    }
+}
