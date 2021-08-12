@@ -757,7 +757,10 @@ ul {
 .works {
     display: flex;
 }
-
+#works {
+    padding-left: 0;
+    padding-right: 0;
+}
 .worksCol {
     flex: 1 1 0;
 }
@@ -809,7 +812,7 @@ ul {
     font-style: italic;
     text-decoration: none;
 }
-
+ 
 
 /* Clients */
 

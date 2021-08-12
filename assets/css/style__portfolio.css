@@ -36,7 +36,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
 
 /* header */
 
-.header__inner {
+.headerInner {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     margin-bottom: 70px;
 }
 
-.header__logo {
+.headerLogo {
     font-size: 30px;
     font-weight: 700;
     color: #222;
@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     text-transform: uppercase;
 }
 
-.nav__link {
+.navLink {
     display: inline-block;
     vertical-align: top;
     margin: 0 15px;
@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     transition: color 0.1s linear;
 }
 
-.nav__link:after {
+.navLink:after {
     content: "";
     display: block;
     width: 100%;
@@ -83,23 +83,23 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     transition: opacity 0.1s linear;
 }
 
-.nav__link:hover {
+.navLink:hover {
     color: rgb(63, 57, 57);
 }
 
-.nav__link:hover:after,
-.nav__link.active:after {
+.navLink:hover:after,
+.navLink.active:after {
     opacity: 1;
 }
 
-.nav__link.active {
+.navLink.active {
     color: rgb(63, 57, 57);
 }
 
 
 /* Nav toggle */
 
-.nav-toggle {
+.navToggle {
     width: 30px;
     padding: 10px 0;
     display: none;
@@ -114,11 +114,11 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     z-index: 1;
 }
 
-.nav-toggle:focus {
+.navToggle:focus {
     outline: 0;
 }
 
-.nav-toggle__item {
+.navToggleItem {
     display: block;
     width: 100%;
     height: 3px;
@@ -132,12 +132,12 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     transition: background 0.2s linear;
 }
 
-.nav-toggle.active .nav-toggle__item {
+.navToggle.active .navToggleItem {
     background: none;
 }
 
-.nav-toggle__item:before,
-.nav-toggle__item:after {
+.navToggleItem:before,
+.navToggleItem:after {
     content: "";
     width: 100%;
     height: 3px;
@@ -148,20 +148,20 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     transition: transform 0.2s linear;
 }
 
-.nav-toggle__item:before {
+.navToggleItem:before {
     top: -8px;
 }
 
-.nav-toggle__item:after {
+.navToggleItem:after {
     bottom: -8px;
 }
 
-.nav-toggle.active .nav-toggle__item:before {
+.navToggle.active .navToggleItem:before {
     transform-origin: left top;
     transform: rotate(45deg) translate3d(0px, -2px, 0);
 }
 
-.nav-toggle.active .nav-toggle__item:after {
+.navToggle.active .navToggleItem:after {
     transform-origin: left bottom;
     transform: rotate(-45deg) translate3d(0px, 3px, 0);
 }
@@ -169,7 +169,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
 
 /* */
 
-.general__title {
+.generalTitle {
     color: #222;
     text-transform: uppercase;
     font-family: "Roboto Light";
@@ -179,7 +179,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     letter-spacing: -1px;
 }
 
-.btn__one {
+.btnOne {
     display: block;
     outline: none;
     text-align: center;
@@ -196,7 +196,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     transition: 0.3s color, 0.3s background-color;
 }
 
-.btn__one:hover {
+.btnOne:hover {
     color: #fff;
     background-color: #222;
 }
@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     padding: 0 10px;
 }
 
-.single__wrap {
+.singleWrap {
     max-width: 1200px;
     padding: 55px;
     margin: 20px auto;
@@ -220,13 +220,13 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     background-color: #222;
 }
 
-.single__container {
+.singleContainer {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
 }
 
-.single__title {
+.singleTitle {
     color: #a94bcb;
     line-height: 1;
     text-transform: uppercase;
@@ -235,7 +235,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     margin-bottom: 40px;
 }
 
-.single__text {
+.singleText {
     width: 100%;
     max-width: 300px;
     margin-right: 50px;
@@ -244,7 +244,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     line-height: 1.3;
 }
 
-.single__img {
+.singleImg {
     width: calc(100% - 350px);
 }
 
@@ -261,27 +261,27 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
 
 /* ERRORS */
 
-.page-form_errors {
+.pageFormErrors {
     padding-bottom: 30px;
     font-size: 16px;
     font-family: "Roboto Medium";
     color: #d7333a;
 }
 
-.page-form_errors p {
+.pageFormErrors p {
     display: none;
 }
 
 
 /* Form */
 
-.page-form_row {
+.pageFormRow {
     position: relative;
     margin-bottom: 35px;
     max-width: 660px;
 }
 
-.form-placeholder {
+.formPlaceholder {
     position: absolute;
     top: -40px;
     left: 0;
@@ -294,7 +294,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     z-index: 0;
 }
 
-.form-input {
+.formInput {
     height: 100%;
     width: 100%;
     display: block;
@@ -307,27 +307,27 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     transition: 0.3s border;
 }
 
-.form-input:hover {
+.formInput:hover {
     border-bottom: 1px solid #fff;
 }
 
 
 /* text */
 
-.contact-page_text {
+.contactPageText {
     margin: 50px 0;
     color: #9b9b9b;
     font-size: 15px;
 }
 
-.contact-page_text p {
+.contactPageText p {
     margin-bottom: 15px;
 }
 
 
 /* button "Надішліть" запит */
 
-.page-form_row {
+.pageFormRow {
     position: relative;
     margin-bottom: 35px;
     max-width: 660px;
@@ -347,7 +347,7 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
     font-weight: bold;
 }
 
-.page-form_btn {
+.pageFormBtn {
     width: 100%;
     max-width: 300px;
     background-color: transparent;
@@ -366,42 +366,42 @@ h1, h2, h3, h4, h5, h6, ul, li, p {
 /* Адаптив */
 
 @media (max-width: 990px) {
-    .single__text {
+    .singleText {
         max-width: 100%;
         font-size: 20px;
         line-height: 1.5;
         margin-bottom: 20px;
     }
-    .single__img {
+    .singleImg {
         width: 100%;
     }
 }
 
 @media (max-width: 770px) {
-    .nav__link {
+    .navLink {
         margin: 0 8px;
     }
-    .single__title {
+    .singleTitle {
         font-size: 40px;
     }
-    .header__inner {
+    .headerInner {
         flex-direction: column;
         margin-bottom: 30px;
     }
-    .header__logo {
+    .headerLogo {
         margin-bottom: 20px;
     }
 }
 
 @media (max-width: 575px) {
-    .header__inner {
+    .headerInner {
         flex-direction: column;
         margin-bottom: 20px;
     }
-    .header__logo {
+    .headerLogo {
         margin-bottom: 20px;
     }
-    .general__title {
+    .generalTitle {
         font-size: 40px;
     }
 }
